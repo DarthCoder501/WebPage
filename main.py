@@ -80,7 +80,7 @@ def explain_prediction(probability, input_dict, surname):
 
 
   raw_response = client.chat.completions.create(
-      model="llama3-groq-70b-8192-tool-use-preview",
+      model="llama-3.3-70b-versatile",
       messages=[{
           "role": "user",
           "content": prompt
@@ -141,7 +141,7 @@ def generate_email(probability, input_dict, explanation, surname):
 
 
   raw_response = client.chat.completions.create(
-      model="llama3-groq-70b-8192-tool-use-preview",
+      model="llama-3.3-70b-versatile",
       messages=[{
           "role": "user",
           "content": prompt
